@@ -95,8 +95,8 @@
                   
 
 
-                    <li class="active">
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-table"></i>
+                    <li>
+                        <a href="datatables.html"><i class="sidebar-item-icon fa fa-table"></i>
                             <span class="nav-label">แผนก</span></a>
                     </li>
             
@@ -105,8 +105,8 @@
                             <span class="nav-label">หมวดหมู่</span></a>
                     </li>
 
-                    <li>
-                        <a href="equipment.html"><i class="sidebar-item-icon fa fa-copy"></i>
+                    <li class="active">
+                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-copy"></i>
                             <span class="nav-label">ครุภัณฑ์</span></a>
                     </li>
 
@@ -127,7 +127,7 @@
         <div class="content-wrapper">
             <!-- START PAGE CONTENT-->
             <div class="page-heading">
-                <h1 class="page-title">แผนก</h1>
+                <h1 class="page-title">ครุภัณฑ์</h1>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                         <a href="index.html"><i class="la la-home font-20"></i></a>
@@ -138,82 +138,47 @@
             <div class="page-content fade-in-up">
                 <div class="ibox">
                     <div class="ibox-head">
-                        <div class="ibox-title">รายการข้อมูลแผนก</div>
+                        <div class="ibox-title">รายการข้อมูลครุภัณฑ์</div>
                         <div class="ibox-body">
                             <button class="btn btn-info"> เพิ่ม <i class="fa fa-plus"></i></button>
                         </div>
                     </div>
+
+                    <style>
+                        .something th {
+                           /* center Vertical */
+                            font-size: small;
+                            /* font-weight: lighter; */
+                        }
+                    </style>
+
                     <div class="ibox-body">
                         <table class="table table-striped table-bordered table-hover" id="example-table" cellspacing="0"
                             width="100%">
                             <thead>
-                                <tr>
-                                    <th>ลำดับ</th>
-                                    <th>แผนก</th>
-                                    <th>บทบาท</th>
-                                    <th>จัดการข้อมูล</th>
+                                <tr class="something">
+                                    <th class="align-middle text-center">ลำดับ</th>
+                                    <th class="align-middle text-center">ส่วนราชการ</th>
+                                    <th class="align-middle text-center">หน่วยงาน</th>
+                                    <th class="align-middle text-center">ประเภท</th>
+                                    <th class="align-middle text-center">รหัส</th>
+                                    <th class="align-middle text-center">ลักษณะ/คุณสมบัติ</th>
+                                    <th class="align-middle text-center">รุ่น/แบบ</th>
+                                    <th class="align-middle text-center">หน่วยรับผิดชอบ</th>
+                                    <th class="align-middle text-center">วัน/เดือน/ปี</th>
+                                    <th class="align-middle text-center">วิธีการได้มา</th>
+                                    <th class="align-middle text-center">ที่เอกสาร</th>
+                                    <th class="align-middle text-center">ราคาต่อหน่วย/ชุด/กลุ่ม</th>
+                                    <th class="align-middle text-center">หลักฐานการจ่าย</th>
+                                    <th class="align-middle text-center">สถานะ</th>
+
+
 
                                 </tr>
                             </thead>
-                  
+                         
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>กรรมวิธีข้อมูลฯ</td>
-                                    <td>ผู้ดูแลระบบ (Admin)</td>
-                                    <td>
-                                        <button class="btn btn-success "><i class="fa fa-eye"></i></button>
-
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>2</td>
-                                    <td>จัดหน่วยงาน</td>
-                                    <td>ผู้ใช้งาน (User)</td>
-                                    <td>
-                                        <button class="btn btn-success "><i class="fa fa-eye"></i></button>
-                                        <button class="btn btn-danger "><i class="fa fa-times"></i></button>
-
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>3</td>
-                                    <td>Test</td>
-                                    <td>Tester</td>
-                                    <td>
-                                        <button class="btn btn-success "><i class="fa fa-search"></i></button>
-                                        <button class="btn btn-danger "><i class="fa fa-times"></i></button>
-
-                                        <button class="btn btn-default btn-xs m-r-5" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-pencil font-14"></i></button>
-                                        <button class="btn btn-default btn-xs" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-trash font-14"></i></button>
-
-                                        <button class="btn btn-default btn-xs m-r-5" data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-pencil font-14"></i></button>
-                                        <button class="btn btn-default btn-xs" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-trash font-14"></i></button>
-
-
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>4</td>
-                                    <td>Test 2</td>
-                                    <td>Tester</td>
-                                    <td>
-                                        <button class="btn btn-success m-r-5"><i class="fa fa-search "></i></button>
-                                        <button class="btn btn-warning m-r-5"><i class="fa fa-pencil-square-o "></i></button>
-                                        <button class="btn btn-danger "><i class="fa fa-times-circle-o"></i></button>
-
-
-                                      
-
-                                    </td>
-
-                                </tr>
+                               
 
 
                             </tbody>
